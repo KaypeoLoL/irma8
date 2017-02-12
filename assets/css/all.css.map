@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,wDAAwD;EACxD,uBAAuB,EAAE","file":"all.css","sourcesContent":[".hero {\n  min-height: 450px;\n  background-image: url(assets/img/heroes/index-hero.jpg);\n  background-size: cover; }\n"]}
