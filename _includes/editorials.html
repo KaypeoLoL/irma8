@@ -1,0 +1,18 @@
+
+<h3 class="section-name">Editorials</h3>
+
+
+<div class="grid">
+  {% for post in site.posts limit:9 %}
+  <figure class="effect-chico">
+    <img src="assets/img/blogs/{{ post.image }}" alt="img15"/>
+    <figcaption>
+      <h2>{{post.categories}} <span></span></h2>
+      <p>{{post.blog_title | truncate: 60}}</p>
+      <a href="{{post.url}}"></a>
+    </figcaption>
+  </figure>
+  {% endfor %}
+
+
+</div>
