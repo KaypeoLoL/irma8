@@ -226,9 +226,12 @@ th {
         .editorials .editorial .wrapper .editorial-textBox:hover {
           display: block; }
 
+<<<<<<< HEAD
 html {
   height: 100%; }
 
+=======
+>>>>>>> gh-pages
 header {
   background-color: rgba(0, 0, 0, 0.8); }
   header nav {
@@ -259,21 +262,32 @@ header {
 
 .name {
   text-align: center;
+<<<<<<< HEAD
   font-family: 'Roboto' cursive;
   font-size: 72px;
   font-weight: normal;
   color: white;
+=======
+  font-family: 'Caveat Brush';
+  font-size: 72px;
+  font-weight: normal;
+  color: white;
+  letter-spacing: 3px;
+>>>>>>> gh-pages
   margin: 0px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+<<<<<<< HEAD
   .name span {
     font-weight: bold;
     letter-spacing: -1px;
     border-bottom: 10px solid white;
     line-height: .8;
     padding: 15px; }
+=======
+>>>>>>> gh-pages
 
 .section-name {
   padding: 3rem 0;
@@ -285,11 +299,18 @@ header {
 
 .grid {
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+  padding: 1em 0 4em;
+>>>>>>> gh-pages
   text-align: center;
   list-style: none;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   width: 1500px;
+=======
+>>>>>>> gh-pages
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
@@ -297,9 +318,14 @@ header {
   .grid figure {
     position: relative;
     overflow: hidden;
+<<<<<<< HEAD
     margin: 5px;
     display: inline-block;
     min-width: 320px;
+=======
+    margin: 0 1%;
+    display: inline-block;
+>>>>>>> gh-pages
     max-width: 480px;
     max-height: 360px;
     cursor: pointer;
@@ -310,7 +336,11 @@ header {
       max-width: 100%;
       min-height: 100%;
       opacity: 0.8;
+<<<<<<< HEAD
       transform: scale(1.1);
+=======
+      transform: scale(1.06);
+>>>>>>> gh-pages
       transition: .35s; }
     .grid figure figcaption {
       color: white;
@@ -336,9 +366,13 @@ header {
       letter-spacing: 1px;
       font-size: 90%;
       max-width: 80%;
+<<<<<<< HEAD
       transform: scale(1.5);
       opacity: 0;
       transition: .35s; }
+=======
+      transform: scale(1.5); }
+>>>>>>> gh-pages
     .grid figure h2 {
       margin: 0;
       word-spacing: -0.15em;
@@ -370,6 +404,7 @@ figcaption::before {
   opacity: 0;
   transition: .35s; }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1560px) {
   figure {
     max-width: 360px; } }
@@ -393,5 +428,43 @@ footer {
     background-color: #333; }
     footer .copyright p {
       padding-top: 150px; }
+=======
+p {
+  opacity: 0;
+  transition: .35s; }
+
+@media screen and (max-width: 1560px) {
+  figure {
+    max-width: 360; } }
+
+.instagram {
+  padding-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .instagram .section-name {
+    padding: 3rem 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    color: white; }
+
+#instafeed {
+  max-width: 1000px;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #instafeed a {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
+  #instafeed img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px; }
+>>>>>>> gh-pages
 
 /*# sourceMappingURL=all.css.map */
