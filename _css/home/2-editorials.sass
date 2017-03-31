@@ -9,19 +9,19 @@
 
 .grid
   margin: 0 auto
-  padding: 1em 0 4em
   text-align: center
   list-style: none
   display: flex
+  width: 1500px
   justify-content: center
   flex-wrap: wrap
 
   figure
     position: relative
     overflow: hidden
-    margin: 0 1%
+    margin: 5px
     display: inline-block
-    //min-width: 320px
+    min-width: 320px
     //max-width: 480px
     max-width: 480px
     max-height: 360px
@@ -34,7 +34,7 @@
       max-width: 100%
       min-height: 100%
       opacity: 0.8
-      transform: scale(1.06)
+      transform: scale(1.1)
       transition: .35s
 
     figcaption
@@ -62,6 +62,8 @@
       font-size: 90%
       max-width: 80%
       transform: scale(1.5)
+      opacity: 0
+      transition: .35s
     h2
       margin: 0
       word-spacing: -0.15em
@@ -91,12 +93,10 @@ figcaption::before
   transform: scale(1.1)
   opacity: 0
   transition: .35s
-p
-  opacity: 0
-  transition: .35s
+
 
 //media query
 
-@media screen and (max-width: 1560px)
+@media screen and (min-width: 1560px)
   figure
-    max-width: 360
+    max-width: 360px

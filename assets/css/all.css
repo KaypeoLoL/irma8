@@ -226,6 +226,9 @@ th {
         .editorials .editorial .wrapper .editorial-textBox:hover {
           display: block; }
 
+html {
+  height: 100%; }
+
 header {
   background-color: rgba(0, 0, 0, 0.8); }
   header nav {
@@ -256,16 +259,21 @@ header {
 
 .name {
   text-align: center;
-  font-family: 'Caveat Brush';
+  font-family: 'Roboto' cursive;
   font-size: 72px;
   font-weight: normal;
   color: white;
-  letter-spacing: 3px;
   margin: 0px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  .name span {
+    font-weight: bold;
+    letter-spacing: -1px;
+    border-bottom: 10px solid white;
+    line-height: .8;
+    padding: 15px; }
 
 .section-name {
   padding: 3rem 0;
@@ -277,11 +285,11 @@ header {
 
 .grid {
   margin: 0 auto;
-  padding: 1em 0 4em;
   text-align: center;
   list-style: none;
   display: -ms-flexbox;
   display: flex;
+  width: 1500px;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
@@ -289,8 +297,9 @@ header {
   .grid figure {
     position: relative;
     overflow: hidden;
-    margin: 0 1%;
+    margin: 5px;
     display: inline-block;
+    min-width: 320px;
     max-width: 480px;
     max-height: 360px;
     cursor: pointer;
@@ -301,7 +310,7 @@ header {
       max-width: 100%;
       min-height: 100%;
       opacity: 0.8;
-      transform: scale(1.06);
+      transform: scale(1.1);
       transition: .35s; }
     .grid figure figcaption {
       color: white;
@@ -327,7 +336,9 @@ header {
       letter-spacing: 1px;
       font-size: 90%;
       max-width: 80%;
-      transform: scale(1.5); }
+      transform: scale(1.5);
+      opacity: 0;
+      transition: .35s; }
     .grid figure h2 {
       margin: 0;
       word-spacing: -0.15em;
@@ -359,41 +370,28 @@ figcaption::before {
   opacity: 0;
   transition: .35s; }
 
-p {
-  opacity: 0;
-  transition: .35s; }
-
-@media screen and (max-width: 1560px) {
+@media screen and (min-width: 1560px) {
   figure {
-    max-width: 360; } }
+    max-width: 360px; } }
 
-.instagram {
-  padding-bottom: 2rem;
-  background-color: rgba(0, 0, 0, 0.9); }
-  .instagram .section-name {
-    padding: 3rem 0;
-    margin: 0;
-    text-align: center;
-    font-size: 40px;
-    color: white; }
-
-#instafeed {
-  max-width: 1000px;
-  margin: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  #instafeed a {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%; }
-  #instafeed img {
+footer {
+  text-align: center; }
+  footer #instafeed {
     width: 100%;
-    box-sizing: border-box;
-    padding: 5px; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #333; }
+    footer #instafeed a {
+      width: calc(100% /6); }
+    footer #instafeed img {
+      width: 100%; }
+  footer .copyright {
+    min-height: 200px;
+    color: white;
+    background-color: #333; }
+    footer .copyright p {
+      padding-top: 150px; }
 
 /*# sourceMappingURL=all.css.map */
