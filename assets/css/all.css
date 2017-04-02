@@ -367,6 +367,26 @@ p {
   figure {
     max-width: 360; } }
 
+footer {
+  text-align: center; }
+  footer #instafeed {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #333; }
+    footer #instafeed a {
+      width: calc(100% /6); }
+    footer #instafeed img {
+      width: 100%; }
+  footer .copyright {
+    min-height: 200px;
+    color: white;
+    background-color: #333; }
+    footer .copyright p {
+      padding-top: 180px; }
+
 .instagram {
   padding-bottom: 2rem;
   background-color: rgba(0, 0, 0, 0.9); }
