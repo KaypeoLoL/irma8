@@ -1,15 +1,16 @@
 
 <h3 class="section-name">Editorials</h3>
+<hr class="hr">
 
 
 <div class="grid">
-  {% for post in site.posts limit:9 %}
+  {% for post in site.posts limit:3 %}
   <figure class="effect-chico">
     <img src="assets/img/blogs/{{ post.image }}" alt="img15"/>
     <figcaption>
       <h2>{{post.categories}} <span></span></h2>
       <p>{{post.blog_title | truncate: 60}}</p>
-      <a href="{{posts.url}}"></a>
+      <a href="{{post.url}}"></a>
     </figcaption>
   </figure>
   {% endfor %}

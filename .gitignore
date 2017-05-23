@@ -1,7 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-gulpfile.js
 pre-images
 node_modules
 package.json

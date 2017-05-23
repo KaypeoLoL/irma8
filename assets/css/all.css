@@ -228,6 +228,9 @@ header {
   color: #333;
   font-weight: 700; }
 
+.hr {
+  width: 100px; }
+
 .grid {
   margin: 0 auto;
   padding: 1em 0 4em;
@@ -235,7 +238,7 @@ header {
   list-style: none;
   display: -ms-flexbox;
   display: flex;
-  width: 1500px;
+  max-width: 1500px;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
@@ -329,16 +332,18 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-    justify-content: center; }
-    footer #instafeed a {
-      max-width: calc(100%/6); }
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
     footer #instafeed img {
-      width: 100%; }
+      width: calc(100%/6);
+      height: calc(100%/6); }
   footer .copyright {
     min-height: 200px;
     color: white;
     background-color: #333; }
     footer .copyright p {
+      margin: 0;
       padding-top: 150px; }
 
 /*# sourceMappingURL=all.css.map */
